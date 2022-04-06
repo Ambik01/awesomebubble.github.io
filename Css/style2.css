@@ -1,0 +1,705 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.extra-div h2,
+.servicediv h2 {
+    font-size: 0.9rem;
+    margin: 15px 0px;
+    font-weight: 900;
+    line-height: 1.1;
+    word-spacing: 4px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    /* color:#606060 */
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+
+i {
+    /* color: #2fccd0; */
+    color: orange;
+}
+
+.dark-mode {
+    margin-left: 20px;
+
+
+}
+
+
+.dark-mode i {
+    color: white;
+
+
+}
+
+
+
+/* ************************ actual CSS starts ***************** */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    /* background-image: linear-gradient(rgba(56, 193, 228, 0.63), rgba(26, 190, 240, 0.774)), url('images/cms.svg'); */
+    background: url('../images/cms.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0);
+    background-position: center;
+    position: relative;
+
+
+
+}
+
+#logo_span {
+    color: #f9fc43;
+
+    /* box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.877); */
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    /* background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%); */
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+
+
+
+
+
+    opacity: 0.6;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+
+    opacity: 0.6;
+}
+
+.nav-item a {
+
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.nav-item .active {
+    color: #f9fc43 !important;
+}
+
+.navbar-brand {
+    font-weight: 900;
+    color: white !important;
+}
+
+.navbar-toggler {
+    border: transparent;
+
+
+}
+
+.header-section {
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.center-div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+
+}
+
+.header-buttons a {
+    border: 1px solid white;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    background: #FBDA61;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    /* opacity: 0.8; */
+
+}
+
+.header-buttons a:hover {
+    color: #50d1c0;
+    background: #fff;
+    text-decoration: none;
+    /* background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%); */
+    /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3); */
+}
+
+
+.center-div p {
+    font-size: 1.3rem;
+    padding: 10px 0 20px;
+    color: white;
+}
+
+
+
+
+
+
+/* **********************************Extra Div Section*********************************** */
+
+
+
+
+
+
+.header-extradiv {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+
+
+
+
+}
+
+.extra-div {
+    background: #707070;
+    border: medium none;
+    padding: 40px !important;
+    border-radius: 3px;
+    transition: 0.3s;
+    margin-bottom: 5px;
+
+
+
+}
+
+
+.extra-div:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+
+
+/* ************* services********** */
+
+.service_offer {
+    background: #707070;
+    padding: 50px;
+    margin-bottom: 50px;
+
+}
+
+
+.headings {
+    margin-bottom: 50px;
+
+}
+
+
+.headings h1 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.names h1 {
+    color: #fdfdfd;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.servicediv .row {
+    padding: 1.5rem 0;
+    transition: 0.3s;
+}
+
+.service-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 
+.content .row{
+    padding: 20px;
+} */
+
+.progress {
+
+    height: 0.8rem !important;
+    margin-bottom: 50px !important;
+
+}
+
+
+
+
+/* ************************** Awards won start***************** */
+
+
+.project-work {
+    margin: 100px 0;
+}
+
+.project-work h1 {
+    color: orange;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+/* ************************** Awards won ends***************** */
+
+
+
+/* ************************** pricing section STARTS***************** */
+
+
+.pricing {
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+
+}
+
+
+.pricing::before {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* z-index: -1; */
+    background: linear-gradient(160deg, #f7a815 55%, #000000 0%);
+
+}
+
+.money {
+    font-size: 40px;
+    line-height: 1;
+    /* color: #606060; */
+}
+
+.card {
+    transition: 0.4 ease;
+}
+
+.card-header {
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: #000;
+    color: #fff;
+    padding: 25px 9px !important;
+}
+
+.card-body {
+    padding: 30px 0px !important;
+    background: #707070;
+    color: #fff;
+}
+
+.card-body li {
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ecf1f3;
+}
+
+.card-footer {
+    background-color: #000 !important;
+
+    padding: 30px 0px !important;
+}
+
+.card-footer a {
+
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #f3f7f6;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+
+
+}
+
+.card-footer a:hover {
+    color: #fff;
+    background: rgb(223, 153, 23);
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+
+.card:hover .card-header,
+.card:hover .money {
+    /* color: #50d1c0; */
+    color: #5db7e4;
+}
+
+.card-second:hover {
+    transform: translateY(-20px);
+    /* background-color: aqua; */
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+
+/* ************************** pricing section ends***************** */
+
+
+
+/* ************************** customer feeback starts  ***************** */
+
+
+.happyClients {
+
+    height: 100vh;
+    width: 100%;
+    padding: 80px 0;
+    background-color: #707070;
+}
+
+.box {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #000;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    transition: 0.3 ease;
+    margin-bottom: 5px;
+
+}
+
+
+
+.box:hover {
+    background: #606060;
+}
+
+.box:hover p {
+    color: white;
+}
+
+.carousel-indicators {
+
+    position: absolute;
+    right: 0;
+    bottom: -60px !important;
+    /* background-color: #16c9f6!important; */
+}
+
+.carousel-indicators button {
+    background-color: #f09328 !important;
+}
+
+.box a {
+    position: relative;
+}
+
+.box a img {
+    height: 100px;
+    width: 100px;
+    /* border: 4px solid #16c9f6; */
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.box a:after {
+    content: "\f10d";
+    font-family: FontAwesome;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+    color: white;
+    position: absolute;
+    top: 150%;
+    left: 70%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box h1 {
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(236, 229, 229);
+    margin-bottom: 10px;
+}
+
+.box h2 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #aca5a5;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/* ************************** customer feeback ends  ***************** */
+
+
+/* ****************************** contact us starts ***************************** */
+
+.contactus {
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    position: relative;
+}
+
+
+.contactus:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(330deg, #f7a815 55%, #707070 0%);
+    z-index: -1;
+}
+
+.form-button button {
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    background: transparent;
+
+}
+
+
+form:hover .form-button button {
+    background: rgb(0, 0, 0);
+    color: #ebf3f2;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+::placeholder {
+    font-size: 0.85rem;
+}
+
+
+/**********************************Contact us ends********************** */
+
+
+/**********************************News letter starts********************** */
+.newsLetter {
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+}
+
+.news-input {
+    /* border-radius: 100px 0px 0px 100px !important; */
+    border-radius: 2em 0em 0em 0em !important;
+    min-width: 150px;
+    min-height: 45px;
+
+}
+
+.input-group-text {
+    color: #fff;
+    background: #5bc0de;
+    /* border-radius: 0 100px 100px 0!important; */
+    border-radius: 0em 0em 2em 0em !important;
+    min-height: 50px;
+}
+
+/* *********************************News letter ends***********************/
+
+
+
+
+
+/* *********************************Footer starts************************/
+
+.footersection {
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: #707070 !important;
+    position: relative;
+}
+
+.footersection p {
+    color: #fff;
+
+}
+
+.footersection li a {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+
+}
+
+.footersection h3 {
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: white;
+    background: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#myBtn:hover {
+    background: orange;
+}
+
+
+
+/* *********************************Footer Ends************************/
+
+
+@media (max-width: 768px) {
+    .nav-item {
+        text-align: center !important;
+    }
+
+
+    .pricing,
+    .happyClients,
+    .contactus {
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .card-second {
+        transform: translateY(0px);
+        margin: 30px 0;
+    }
+
+
+    .footer-div:nth-child(2) {
+        text-align: left !important;
+    }
+
+    .footer-div {
+        margin: 30px 0;
+    }
+
+
+}
+
+@media (max-width:988px) {
+    .dark-mode {
+        padding-top: 5px;
+        margin-right: 20px;
+    }
+}
